@@ -1,6 +1,7 @@
 package ui;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,6 +12,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
+import model.SetOperations;
 
 public class setController {
 
@@ -31,12 +33,25 @@ public class setController {
 
     @FXML
     private Label result;
+
+    private int numSet=0;
     
+    private SetOperations so;
+    
+    private ArrayList<String> a;
+    
+    private ArrayList<String> b;
+
     @FXML
     private TextField set;
 
+
     @FXML
     void addSet(ActionEvent event) {
+    	if (numSet<3) {
+			
+		}
+    	
 
     }
 
@@ -80,5 +95,8 @@ public class setController {
     	operator.getItems().add("Unión");
     	operator.getItems().add("Complemento");
     	operator.getItems().add("Diferencia");
+
+    	
+    	so = new SetOperations();
     }
 }
