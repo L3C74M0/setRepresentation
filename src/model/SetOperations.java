@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package model;
 
 import java.util.HashSet;
@@ -50,4 +51,30 @@ public class SetOperations {
 	
 	
 
+=======
+package model;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class SetOperations {
+	
+	public SetOperations() {
+		
+		
+		
+	}
+	
+	public Set<String> union(Set<String> setA, Set<String> setB){
+		
+		Set<String> setC = new HashSet<String>();
+		
+		setC.addAll(setA);
+		setC.addAll(setB);
+		
+		return setC;
+		
+	}
+	
+>>>>>>> cdd1ba3f8d08f6942509474231dbd24f9c92c3cf
 }

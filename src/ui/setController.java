@@ -62,6 +62,5 @@ public class setController {
 
     @FXML
     void initialize() {
-    	operator.getItems().add("");
     }
 }
