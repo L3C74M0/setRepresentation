@@ -13,7 +13,7 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.setController">
    <children>
-      <ImageView fitHeight="400.0" fitWidth="700.0">
+      <ImageView fitHeight="420.0" fitWidth="720.0">
          <image>
             <Image url="@../../imgs/Conjunto-equivalente.jpg" />
          </image>
@@ -43,6 +43,21 @@
       <Label layoutX="241.0" layoutY="253.0" text="Operador" textFill="WHITE">
          <font>
             <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="33.0" prefHeight="25.0" prefWidth="200.0" text="Para agregar un conjunto," textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="50.0" prefHeight="25.0" prefWidth="194.0" text="escriba los elementos sin espacio" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="67.0" prefHeight="25.0" prefWidth="194.0" text="separados por una coma." textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Label>
    </children>
