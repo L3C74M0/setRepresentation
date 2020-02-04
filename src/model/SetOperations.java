@@ -27,10 +27,10 @@ public class SetOperations {
 	 * @param setB The second set <br><br>
 	 * @return One set with the elements of the two first sets <br><br>
 	 */
-	public Set<String> union(Set<String> setA, Set<String> setB) {
+	public HashSet<String> union(Set<String> setA, Set<String> setB) {
 
 
-		Set<String> setC = new HashSet<String>();
+		HashSet<String> setC = new HashSet<String>();
 
 		setC.addAll(setA);
 		setC.addAll(setB);
@@ -48,9 +48,9 @@ public class SetOperations {
 	 * @return One set with the common elements of the two first sets <br><br>
 	 */
 
-	public Set<String> intersection(Set<String> setA, Set<String> setB) {
+	public HashSet<String> intersection(Set<String> setA, Set<String> setB) {
 
-		Set<String> setC = new HashSet<String>();
+		HashSet<String> setC = new HashSet<String>();
 
 		for (String e : setA) {
 			if (setB.contains(e)) {
@@ -69,9 +69,9 @@ public class SetOperations {
 	 * @param setB The second set <br><br>
 	 * @return One set whose elements are within setA but not within setB <br><br>
 	 */
-	public Set<String> diference(Set<String> setA, Set<String> setB) {
+	public HashSet<String> diference(Set<String> setA, Set<String> setB) {
 
-		Set<String> setC = new HashSet<String>();
+		HashSet<String> setC = new HashSet<String>();
 
 		for (String e : setA) {
 			if (!setB.contains(e)) {
