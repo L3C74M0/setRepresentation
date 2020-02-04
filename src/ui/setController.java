@@ -42,19 +42,19 @@ public class setController {
 
     @FXML
     void operate(ActionEvent event) {
-    	if(setA.getValue() != null) {
+    	if(setA.getValue() == null) {
     		Alert alert = new Alert(AlertType.ERROR, "Por favor seleccione un conjunto A", ButtonType.OK);
 			alert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
 			alert.show();
     	}
     	
-    	if(setB.getValue() != null) {
+    	if(setB.getValue() == null) {
     		Alert alert = new Alert(AlertType.ERROR, "Por favor seleccione un conjunto B", ButtonType.OK);
 			alert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
 			alert.show();
     	}
     	
-    	if(operator.getValue() != null) {
+    	if(operator.getValue() == null) {
     		Alert alert = new Alert(AlertType.ERROR, "Por favor seleccione un operador", ButtonType.OK);
 			alert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
 			alert.show();
@@ -66,7 +66,6 @@ public class setController {
 
     @FXML
     void initialize() {
-
     	setA.getItems().add("A");
     	setA.getItems().add("A'");
     	setA.getItems().add("B");
@@ -81,7 +80,5 @@ public class setController {
     	operator.getItems().add("Unión");
     	operator.getItems().add("Complemento");
     	operator.getItems().add("Diferencia");
-    	
-
     }
 }
