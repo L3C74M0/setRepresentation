@@ -9,6 +9,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
 
 public class setController {
@@ -30,6 +31,9 @@ public class setController {
 
     @FXML
     private Label result;
+    
+    @FXML
+    private TextField set;
 
     @FXML
     void addSet(ActionEvent event) {

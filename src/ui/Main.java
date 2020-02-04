@@ -20,6 +20,7 @@ public class Main extends Application{
        	stage.setTitle("Conjuntos");
        	stage.setScene(scene);
        	stage.show();
+       	stage.setResizable(false);
        	//stage.getIcons().add(new Image("icon.png"));
 	}
 }
