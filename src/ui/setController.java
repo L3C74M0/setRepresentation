@@ -9,6 +9,7 @@ import javafx.scene.control.Alert.AlertType;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.Region;
 
 public class setController {
@@ -30,6 +31,9 @@ public class setController {
 
     @FXML
     private Label result;
+    
+    @FXML
+    private TextField set;
 
     @FXML
     void addSet(ActionEvent event) {
@@ -62,5 +66,22 @@ public class setController {
 
     @FXML
     void initialize() {
+
+    	setA.getItems().add("A");
+    	setA.getItems().add("A'");
+    	setA.getItems().add("B");
+    	setA.getItems().add("B'");
+    	
+    	setB.getItems().add("A");
+    	setB.getItems().add("A'");
+    	setB.getItems().add("B");
+    	setB.getItems().add("B'");
+    	
+    	operator.getItems().add("Interseción");
+    	operator.getItems().add("Unión");
+    	operator.getItems().add("Complemento");
+    	operator.getItems().add("Diferencia");
+    	
+
     }
 }

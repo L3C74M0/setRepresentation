@@ -16,9 +16,8 @@ public class SetOperations {
 	 */
 	public SetOperations() {
 
-
-
 	}
+
 	
 	/**
 	 * This method finds the union between two given sets <br><br> 
@@ -27,7 +26,8 @@ public class SetOperations {
 	 * @param setB The second set <br><br>
 	 * @return One set with the elements of the two first sets <br><br>
 	 */
-	public Set<String> union(Set<String> setA, Set<String> setB){
+	public Set<String> union(Set<String> setA, Set<String> setB) {
+
 
 		Set<String> setC = new HashSet<String>();
 
@@ -37,6 +37,7 @@ public class SetOperations {
 		return setC;
 
 	}
+
 	
 	/**
 	 * This method finds the intersection between two given sets <br><br> 
@@ -45,7 +46,8 @@ public class SetOperations {
 	 * @param setB The second set <br><br>
 	 * @return One set with the common elements of the two first sets <br><br>
 	 */
-	public Set<String> intersection(Set<String> setA, Set<String> setB){
+
+	public Set<String> intersection(Set<String> setA, Set<String> setB) {
 
 		Set<String> setC = new HashSet<String>();
 
@@ -66,7 +68,7 @@ public class SetOperations {
 	 * @param setB The second set <br><br>
 	 * @return One set whose elements are within setA but not within setB <br><br>
 	 */
-	public Set<String> diference(Set<String> setA, Set<String> setB){
+	public Set<String> diference(Set<String> setA, Set<String> setB) {
 
 		Set<String> setC = new HashSet<String>();
 
@@ -78,6 +80,5 @@ public class SetOperations {
 
 		return setC;
 	}
-	
-	
+
 }
