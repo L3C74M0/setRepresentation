@@ -1,7 +1,5 @@
 package ui;
 
-import java.net.URI;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -22,6 +20,7 @@ public class Main extends Application{
        	stage.setTitle("Conjuntos");
        	stage.setScene(scene);
        	stage.show();
-       	//stage.getIcons().add(new Image("\\ui\\icon.png"));
+       	stage.setResizable(false);
+       //	stage.getIcons().add(new Image("icon.png"));
 	}
 }
