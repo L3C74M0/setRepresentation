@@ -39,6 +39,21 @@ public class setController {
 
     @FXML
     void initialize() {
+    	setA.getItems().add("A");
+    	setA.getItems().add("A'");
+    	setA.getItems().add("B");
+    	setA.getItems().add("B'");
+    	
+    	setB.getItems().add("A");
+    	setB.getItems().add("A'");
+    	setB.getItems().add("B");
+    	setB.getItems().add("B'");
+    	
+    	operator.getItems().add("Interseción");
+    	operator.getItems().add("Unión");
+    	operator.getItems().add("Complemento");
+    	operator.getItems().add("Diferencia");
+    	
 
     }
 }
