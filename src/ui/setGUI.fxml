@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
@@ -10,15 +16,14 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.setController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.setController">
    <children>
       <ImageView fitHeight="420.0" fitWidth="720.0">
          <image>
             <Image url="@../../imgs/Conjunto-equivalente.jpg" />
          </image>
       </ImageView>
-      <Label layoutX="35.0" layoutY="49.0" text="Ingresar conjunto" textFill="WHITE">
+      <Label fx:id="uno" layoutX="35.0" layoutY="49.0" text="Ingresar conjunto" textFill="WHITE">
          <font>
             <Font name="Times New Roman" size="18.0" />
          </font>
@@ -29,7 +34,7 @@
       <ComboBox fx:id="operator" layoutX="211.0" layoutY="278.0" prefHeight="25.0" prefWidth="120.0" />
       <Label fx:id="result" layoutX="50.0" layoutY="317.0" prefHeight="17.0" prefWidth="0.0" />
       <TextField fx:id="set" layoutX="35.0" layoutY="76.0" />
-      <Button layoutX="193.0" layoutY="76.0" mnemonicParsing="false" onAction="#addSet" text="Agregar" />
+      <Button fx:id="dos" layoutX="193.0" layoutY="76.0" mnemonicParsing="false" onAction="#addSet" text="Agregar" />
       <Label layoutX="87.0" layoutY="253.0" text="Conjunto A" textFill="#f5f5f5">
          <font>
             <Font name="Times New Roman" size="16.0" />
@@ -45,17 +50,42 @@
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="490.0" layoutY="33.0" prefHeight="25.0" prefWidth="200.0" text="Para agregar un conjunto," textFill="WHITE">
+      <Label layoutX="475.0" layoutY="33.0" prefHeight="25.0" prefWidth="200.0" text="Para agregar un conjunto," textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="490.0" layoutY="50.0" prefHeight="25.0" prefWidth="194.0" text="escriba los elementos sin espacio" textFill="WHITE">
+      <Label layoutX="475.0" layoutY="50.0" prefHeight="25.0" prefWidth="194.0" text="escriba los elementos sin espacio" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
       </Label>
-      <Label layoutX="490.0" layoutY="67.0" prefHeight="25.0" prefWidth="194.0" text="separados por una coma." textFill="WHITE">
+      <Label layoutX="475.0" layoutY="67.0" prefHeight="25.0" prefWidth="194.0" text="separados por una coma." textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="100.0" prefHeight="25.0" prefWidth="209.0" text="El primer conjunto agregado" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="117.0" prefHeight="25.0" prefWidth="209.0" text="es el A y el segundo agregado el B" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="150.0" prefHeight="25.0" prefWidth="209.0" text="Deje el campo vacio para" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="165.0" prefHeight="25.0" prefWidth="209.0" text="representar el conjunto vacio" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="494.0" layoutY="5.0" prefHeight="25.0" prefWidth="209.0" text="RECOMENDACIONES" textFill="WHITE">
          <font>
             <Font name="Times New Roman Bold" size="14.0" />
          </font>
