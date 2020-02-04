@@ -45,6 +45,21 @@
             <Font name="Times New Roman" size="16.0" />
          </font>
       </Label>
+      <Label layoutX="490.0" layoutY="33.0" prefHeight="25.0" prefWidth="200.0" text="Para agregar un conjunto," textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="50.0" prefHeight="25.0" prefWidth="194.0" text="escriba los elementos sin espacio" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="490.0" layoutY="67.0" prefHeight="25.0" prefWidth="194.0" text="separados por una coma." textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Label>
    </children>
    <cursor>
       <Cursor fx:constant="HAND" />

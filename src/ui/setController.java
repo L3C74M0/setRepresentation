@@ -52,12 +52,31 @@ public class setController {
 
     @FXML
     void addSet(ActionEvent event) {
-    	if (numSet<3) {
+    	if (numSet<1) {
+			String line=set.getText();
+			String[] args=line.split(",");
+			if (numSet==0) {
+				for (int i = 0; i < args.length; i++) {
+					a= new ArrayList<String>();
+				 a.add(args[i]);
+				}
+			}else {
+				for (int i = 0; i < args.length; i++) {
+					b=new ArrayList<String>();
+					b.add(args[i]);
+				}
+				set.setText("");
+			}
+			numSet++;
+    	}else {
 			
-		}
-    	
-
+    		Alert alert = new Alert(AlertType.INFORMATION, "Ya no puede crear más conjuntos", ButtonType.OK);
+			alert.getDialogPane().setMinHeight(Region.USE_PREF_SIZE);
+			alert.show();
+			set.setVisible(false);
+    	}
     }
+
 
     @FXML
     void operate(ActionEvent event) {
